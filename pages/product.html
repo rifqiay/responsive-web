@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container d-flex">
+        <a class="navbar-brand order-lg-0" href="../index.html">
+          <img src="../asset/img/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="profil order-lg-4">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="../asset/img/shopping-cart (2) 1.png"
+                    alt="shopping-cart"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <button class="btn-danger border-0 rounded-pill">
+                    Login
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <button class="btn-light border-dark rounded-pill">
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search-input-nav order-lg-2">
+            <form class="form-inline my-2 my-lg-0 mr-lg-5 justify-content-end">
+              <div class="filter order-lg-3">
+                <a class="nav-link" href="#">
+                  <img src="../asset/img/Search Field.png" alt="filter" />
+                </a>
+              </div>
+
+              <input
+                class="form-control rounded-pill"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+
+              <button class="btn my-2 my-sm-0 button-search" type="submit">
+                <img
+                  src="../asset/img/z8.PNG"
+                  class="search-icon"
+                  alt="search-icon"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="first-section">
+        <div class="row py-3">
+          <div class="col">
+            <p>Home > Category > T-Shirt</p>
+          </div>
+        </div>
+      </section>
+      <section class="item-detail">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <img
+              src="../asset/img/m1.png"
+              alt="t-shirt1"
+              class="img-fluid jumbo"
+              id="img-preview"
+            />
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="row">
+              <div class="col">
+                <h1>Baju muslim pria</h1>
+                <p>Zalora Cloth</p>
+                <img src="../asset/img/Rating 5 stars.png" alt="Rating" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p>Price</p>
+                <h1>$ 20.0</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p>color</p>
+                <img
+                  src="../asset/img/Ellipse 5(1).png"
+                  alt="Ellipse"
+                  class="color"
+                />
+                <img
+                  src="../asset/img/Ellipse 6.png"
+                  alt="Ellipse"
+                  class="color"
+                />
+                <img
+                  src="../asset/img/Ellipse 7.png"
+                  alt="Ellipse"
+                  class="color"
+                />
+                <img
+                  src="../asset/img/Ellipse 8.png"
+                  alt="Ellipse"
+                  class="color"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col">
+                <p>size</p>
+                <img
+                  src="../asset/img/z9.PNG"
+                  onclick="min()"
+                  class="control"
+                  alt="Ellipse"
+                />
+                <span id="size">0</span>
+                <img
+                  src="../asset/img/z10.PNG"
+                  onclick="plus()"
+                  class="control"
+                  alt="Ellipse"
+                />
+              </div>
+              <div class="col">
+                <p>Jumlah</p>
+                <img
+                  src="../asset/img/z9.PNG"
+                  onclick="amountMin()"
+                  class="control"
+                  alt="Ellipse"
+                />
+                <span id="jumlah">0</span>
+                <img
+                  src="../asset/img/z10.PNG"
+                  onclick="amountPlus()"
+                  class="control"
+                  alt="Ellipse"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="row">
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="row tumb-item">
+              <div class="col tumb-item">
+                <img
+                  src="../asset/img/m1.png"
+                  alt="t-shirt1"
+                  class="img-fluid thumb active-thumb"
+                />
+              </div>
+              <div class="col tumb-item">
+                <img
+                  src="../asset/img/m2.png"
+                  alt="t-shirt1"
+                  class="img-fluid thumb"
+                />
+              </div>
+              <div class="col tumb-item">
+                <img
+                  src="../asset/img/m3.png"
+                  alt="t-shirt1"
+                  class="img-fluid thumb"
+                />
+              </div>
+              <div class="col tumb-item">
+                <img
+                  src="../asset/img/m4.png"
+                  alt="t-shirt1"
+                  class="img-fluid thumb"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 mt-3">
+            <div class="row">
+              <div class="col-lg-2 col-3">
+                <button
+                  class="btn btn-light btn-block rounded-pill border border-dark"
+                >
+                  Chat
+                </button>
+              </div>
+              <div class="col-lg-2 col-3">
+                <button
+                  class="btn btn-light btn-block rounded-pill border border-dark"
+                >
+                  Bag
+                </button>
+              </div>
+              <div class="col-lg-4 col-6">
+                <a href="./mybag.html"
+                  ><button class="btn btn-danger btn-block rounded-pill">
+                    Buy Now
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="row mt-4">
+          <div class="col-12">
+            <h1>Informasi Produk</h1>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <h3>Conditon</h3>
+            <p class="text-danger">New</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h4>Description</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, est.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              natus maiores libero mollitia aperiam earum fugiat voluptatum in
+              quas, accusamus tempore beatae fuga amet dicta numquam atque, ex
+              quos eligendi. Provident explicabo, aliquam exercitationem amet
+              illo, doloremque tenetur asperiores error obcaecati iusto,
+              cupiditate ut aut molestiae expedita perferendis? Ratione,
+              obcaecati!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam
+              quibusdam repellat iusto at aperiam corporis ducimus quaerat,
+              placeat autem.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              asperiores?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h3>Product review</h3>
+            <div class="row">
+              <div class="col">
+                <h1>5.0<img src="../asset/img/10.png" alt="10" /></h1>
+
+                <img src="../asset/img/Rating 5 stars.png" alt="Rating" />
+              </div>
+              <div class="col">
+                <img src="../asset/img/z6.PNG" alt="Rating" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="other-item">
+        <div class="row">
+          <div class="col-12">
+            <h1>You can also like this</h1>
+            <p>You've never seen before</p>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12- mt-4">
+            <div class="card">
+              <img
+                src="../asset/img/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1(2).png"
+                class="card-img-top"
+                alt="gez-xavier-mansfield-b34E1vh1tYU-unsplash"
+              />
+              <div class="card-body">
+                <strong
+                  ><a href="./product.html"
+                    >Men's formal suit - Black & White</a
+                  ></strong
+                >
+                <br />
+                <strong>$ 40.0</strong>
+                <br />
+                <p>Zalora Cloth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+    </div>
+    <script src="../asset/js/index.js"></script>
+    <script src="../asset/js/jquery.slim.min.js"></script>
+    <script src="../asset/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
