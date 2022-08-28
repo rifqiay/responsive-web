@@ -2,6 +2,10 @@
   font-family: "Metropolis", sans-serif;
 }
 
+.shadow {
+  box-shadow: rgba(173, 173, 173, 0.25);
+}
+
 .container-flex {
   display: flex;
   justify-content: center;
